@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap" rel="stylesheet">
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <title>Калькулятор</title>
+</head>
+<body>
+    <form class="form_calculater" id="form_calculater" name="calculater" method="POST" action="/calculate.php">
+        <h1>Калькулятор</h1>
+        <fieldset class="data_form">
+            <input class="input_number" type="text" name="value1" pattern="\d+(\.\d+)?" placeholder="Первое значение" required>
+            <input class="input_number" type="text" name="value2" pattern="\d+(\.\d+)?" placeholder="Второе значение" required>
+            <select class="select_param"name="param" required>
+                <option value="" disabled selected>Выберите дейтствие:</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </fieldset>
+        <fieldset class="bloc_result">
+            Ответ:
+            <div class="result"></div>
+        </fieldset>
+        <fieldset>
+            <div class="bloc_buttoms">
+                <input id="refresh" class="button_refresh bloc_buttoms-item" type="button" name="refresh" value="Начать заново">
+                <input class="button_calculate bloc_buttoms-item" type="submit" name="submit" value="Расчитать">
+            </div>
+        </fieldset>
+    </form>
+    <script src="/js/main.js"></script>
+</body>
+</html>

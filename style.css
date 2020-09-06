@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.form_calculater {
+    width: 400px;
+    margin: 20px auto;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.form_calculater h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 20px;
+}
+
+.form_calculater fieldset {
+    border: none;
+    padding: 0px 20px 20px 20px;
+    margin: 0px;
+}
+
+.input_number {
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.select_param {
+    display: block;
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font: 400 14px 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.bloc_result {
+    display: none;
+}
+
+.result {
+    display: inline;
+}
+
+.bloc_buttoms {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bloc_buttoms-item {
+    width: 47%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+.button_refresh {
+    background-color: #cc5454;
+    color: #ffffff;
+}
+
+.button_refresh:hover {
+    background-color: #813030;
+    color: #ffffff;
+}
+
+.button_calculate {
+    background-color: #54cc5e;
+    color: #ffffff;
+}
+
+.button_calculate:hover {
+    background-color: #398840;
+    color: #ffffff;
+}
